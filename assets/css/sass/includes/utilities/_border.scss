@@ -1,0 +1,84 @@
+//---------------------Border---------------------
+.tork-border {
+  border: 1px solid #dee2e6;
+}
+// Border colors
+@each $border_name, $color in $tork-theme-colors {
+  .#{tork-border- + $border_name} {
+    border-color: $color;
+  }
+}
+
+// -----------------border sizing
+@for $i from 1 through 5 {
+  .#{tork-border- + $i} {
+    border-width: $i + px;
+  }
+}
+
+// -------------- border Additive
+.tork-border-top {
+  border-top: 1px solid #dee2e6;
+}
+.tork-border-right {
+  border-top: 1px solid #dee2e6;
+}
+.tork-border-left {
+  border-left: 1px solid #dee2e6;
+}
+.tork-border-bottom {
+  border-bottom: 1px solid #dee2e6;
+}
+
+// -------------- border Additive
+.tork-border-top-0 {
+  border-top: 0 !important;
+}
+.tork-border-right-0 {
+  border-top: 0 !important;
+}
+.tork-border-left-0 {
+  border-left: 0 !important;
+}
+.tork-border-bottom-0 {
+  border-bottom: 0 !important;
+}
+
+//---------------- border radious
+.tork-rounded {
+  border-radius: 0.25rem;
+}
+
+.tork-rounded-top {
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+}
+
+.tork-rounded-right {
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
+
+.tork-rounded-bottom {
+  border-bottom-right-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+}
+.tork-rounded-left {
+  border-bottom-left-radius: 0.25rem !important;
+  border-top-left-radius: 0.25rem !important;
+}
+
+.tork-rounded-circle {
+  border-radius: 50% !important;
+}
+
+.tork-rounded-pill {
+  border-radius: 50rem !important;
+}
+
+// -----------------border radious sizing
+@for $i from 0 through 5 {
+  .#{tork-rounded- + $i} {
+    border-radius: $i * 0.25 + rem !important;
+  }
+}

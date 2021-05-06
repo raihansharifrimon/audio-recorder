@@ -1,0 +1,80 @@
+.section_1007 {  
+    .tork-card {
+      border-radius: 1.875rem;
+      background: linear-gradient(
+        234.06deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.6) 100%
+      );
+      overflow: hidden;
+      border: 2px solid rgba(255, 255, 255, 0.568);
+    }
+  
+    .tork-card-header {
+      padding: 0.8rem 1.625rem;
+      align-items: center;
+    }
+  
+    .progress {
+      width: 100%;
+      height: 7px;
+      background-color: #c8c8c82e;
+    }
+  
+    .progress_done {
+      width: 0;
+      border-radius: 0 0.2rem 0.2rem 0;
+      height: 100%;
+      background: $primary-color;
+      transition: 0.1s ease;
+    }
+  
+    .tork-card-body {
+      padding: 1.3rem 1.625rem;
+  
+      .q_box {
+        border: 2px solid $primary-color;
+        margin: 2rem 0;
+        border-radius: .2rem;
+        overflow: hidden;
+  
+        .box_header {
+          background: $primary-color;
+          padding: 5px 25px;
+          text-align: center;
+          color: #fff;
+  
+          h3 {
+            font-weight: 600;
+            text-transform: capitalize;
+          }
+        }
+  
+        .question_container {
+          min-height: 200px;
+          padding: 10px 0;
+  
+          .q_item {
+              padding: 5px 15px;
+              border: 1px solid $primary-color;
+              margin: 10px;
+              transition: .5s ease .3s;
+              cursor: move;
+          }
+        }
+      }
+  
+      .action_btn {
+        padding: 0.6rem 4rem;
+        margin-top: 1.2rem;
+      }
+    }
+  
+    h2 {
+      font-size: 1.1rem;
+      line-height: 2.7;
+      font-weight: 600;
+      color: $primary-color;
+    }
+  }
+  

@@ -1,0 +1,52 @@
+$sizing: (
+  10: 10%,
+  20: 20%,
+  25: 25%,
+  30: 30%,
+  40: 40%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto,
+);
+
+@each $sizing_name, $sizing_value in $sizing {
+  .#{tork-w- + $sizing_name} {
+    width: $sizing_value;
+  }
+}
+
+// ------------Responsive sizing
+
+// For small devices
+@media only screen and (min-width: 576px) {
+  @each $sizing_name, $sizing_value in $sizing {
+    .#{tork-w-sm- + $sizing_name} {
+      width: $sizing_value;
+    }
+  }
+}
+// For Midium devices
+@media only screen and (min-width: 768px) {
+  @each $sizing_name, $sizing_value in $sizing {
+    .#{tork-w-md- + $sizing_name} {
+      width: $sizing_value;
+    }
+  }
+}
+// For large devices
+@media only screen and (min-width: 992px) {
+  @each $sizing_name, $sizing_value in $sizing {
+    .#{tork-w-lg- + $sizing_name} {
+      width: $sizing_value;
+    }
+  }
+}
+// For extra large devices
+@media only screen and (min-width: 1200px) {
+  @each $sizing_name, $sizing_value in $sizing {
+    .#{tork-w-xl- + $sizing_name} {
+      width: $sizing_value;
+    }
+  }
+}

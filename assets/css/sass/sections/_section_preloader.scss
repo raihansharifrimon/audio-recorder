@@ -1,0 +1,16 @@
+.section_preloader {
+  .preloader_inner {
+     max-width: 400px;
+  }
+
+  .tork-card {
+    border-radius: 1.875rem;
+    background: linear-gradient(
+      234.06deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    );
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.568);
+  }
+}

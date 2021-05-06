@@ -1,0 +1,47 @@
+.card_1003 {
+  margin-top: 1rem;
+  width: 100%;
+
+  .card_1003_container {
+    border-radius: 1rem;
+    background: $primary-gradient-color;
+    overflow: hidden;
+    border: 2px solid $border_color;
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+
+    .exam_info {
+      margin: 1rem;
+
+      h3 {
+        font-size: 1rem;
+        line-height: 1.4;
+        text-transform: capitalize;
+        font-weight: 600;
+        color: $primary-color;
+        margin-bottom: 0.5rem;
+      }
+      p {
+          font-size: .8rem;
+          line-height: 1.5;
+          color: $primary-color;
+      }
+    }
+
+    .time {
+        span {
+          font-weight: 500;
+          font-size: 0.8rem;
+        }
+        svg {
+          width: 1.1rem;
+          height: 1.1rem;
+
+          path {
+            color: $primary-color;
+          }
+        }
+      }
+  }
+}

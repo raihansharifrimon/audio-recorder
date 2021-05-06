@@ -1,0 +1,100 @@
+// includes files
+@import "../includes/fonts";
+@import "../includes/colors";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $primany-font;
+  font-size: $body-font-size;
+  font-weight: $body-font-weight;
+  color: $body-text-color;
+  background: $body-bg-color;
+  line-height: $body-lineheight;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+ul {
+  list-style: none;
+}
+
+/*-----------------
+* tork row style 
+-----------------*/
+.tork-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/*---------------------
+* tork container style 
+---------------------*/
+.tork-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 576px) {
+  .tork-container {
+    max-width: 540px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .tork-container {
+    max-width: 720px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .tork-container {
+    max-width: 960px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .tork-container {
+    max-width: 1140px;
+  }
+}
+// Inclueded utilities and grids files
+@import "../includes/grid";
+@import "../includes/utilities/border";
+@import "../includes/utilities/spacing";
+@import "../includes/utilities/typography";
+@import "../includes/utilities/display";
+@import "../includes/utilities/flex";
+@import "../includes/utilities/float";
+@import "../includes/utilities/overflow";
+@import "../includes/utilities/positions";
+@import "../includes/utilities/_sizing";
+@import "../includes/utilities/_vertical-align";
+@import "../includes/utilities/_visibility";
+@import "../includes/utilities/shadow";

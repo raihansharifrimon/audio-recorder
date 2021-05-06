@@ -1,0 +1,54 @@
+// Display Properties Map
+$tork-theme-display: (
+  none: none,
+  block: block,
+  inline-block: inline-block,
+  inline: inline,
+  flex: flex,
+  inline-flex: inline-flex,
+  grid: grid,
+  table: table,
+  table-cell: table-cell,
+  table-row: table-row,
+);
+// -----------------------Display item show
+@each $dname, $value in $tork-theme-display {
+  .#{tork-d- + $dname} {
+    display: $value !important;
+  }
+}
+
+// ------------Responsive display
+
+// For small devices
+@media only screen and (min-width: 576px) {
+  @each $dname, $value in $tork-theme-display {
+    .#{tork-d-sm- + $dname} {
+      display: $value;
+    }
+  }
+}
+// For Midium devices
+@media only screen and (min-width: 768px) {
+  @each $dname, $value in $tork-theme-display {
+    .#{tork-d-md- + $dname} {
+      display: $value;
+    }
+  }
+}
+// For large devices
+@media only screen and (min-width: 992px) {
+  @each $dname, $value in $tork-theme-display {
+    .#{tork-d-lg- + $dname} {
+      display: $value;
+    }
+  }
+}
+// For extra large devices
+@media only screen and (min-width: 1200px) {
+  @each $dname, $value in $tork-theme-display {
+    .#{tork-d-xl- + $dname} {
+      display: $value;
+    }
+  }
+}

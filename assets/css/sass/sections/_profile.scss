@@ -1,0 +1,33 @@
+.user_profile {
+  margin-top: 3rem;
+
+  .tork-form-control {
+    background: $primary-gradient-color;
+    border-radius: 1rem;
+    border-color: $border_color;
+    border-width: 2px;
+    color: $info-color;
+    padding: 0.4rem 0.9rem;
+    margin-left: 3rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: $primary-color;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 1.5rem 0;
+  }
+  .submit_btns {
+      text-align: center;
+    button {
+      width: 10rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0.8rem;
+      font-weight: 500;
+    }
+    .tork-btn-outline-primary {
+      border: 3px solid $border_color;
+    }
+  }
+}

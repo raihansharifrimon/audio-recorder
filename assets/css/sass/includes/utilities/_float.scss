@@ -1,0 +1,46 @@
+$float: (
+  left: left,
+  right: right,
+  none: none,
+);
+
+@each $float_name, $float_value in $float {
+  .#{tork-float- + $float_name} {
+    float: $float_value;
+  }
+}
+
+// ------------Responsive display
+
+// For small devices
+@media only screen and (min-width: 576px) {
+  @each $float_name, $float_value in $float {
+    .#{tork-float-sm- + $float_name} {
+      float: $float_value;
+    }
+  }
+}
+// For Midium devices
+@media only screen and (min-width: 768px) {
+  @each $float_name, $float_value in $float {
+    .#{tork-float-md- + $float_name} {
+      float: $float_value;
+    }
+  }
+}
+// For large devices
+@media only screen and (min-width: 992px) {
+  @each $float_name, $float_value in $float {
+    .#{tork-float-lg- + $float_name} {
+      float: $float_value;
+    }
+  }
+}
+// For extra large devices
+@media only screen and (min-width: 1200px) {
+  @each $float_name, $float_value in $float {
+    .#{tork-float-xl- + $float_name} {
+      float: $float_value;
+    }
+  }
+}

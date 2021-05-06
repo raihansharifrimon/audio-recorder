@@ -1,0 +1,49 @@
+$vertical_align: (
+  baseline: baseline,
+  top: top,
+  middle: middle,
+  bottom: bottom,
+  text-bottom: text-bottom,
+  text-top: text-top,
+);
+
+@each $vertical_align_name, $vertical_align_value in $vertical_align {
+  .#{tork-v-align- + $vertical_align_name} {
+    vertical-align: $vertical_align_value;
+  }
+}
+
+// ------------Responsive vertical align
+
+// For small devices
+@media only screen and (min-width: 576px) {
+  @each $vertical_align_name, $vertical_align_value in $vertical_align {
+    .#{tork-v-align-sm- + $vertical_align_name} {
+      vertical-align: $vertical_align_value;
+    }
+  }
+}
+// For Midium devices
+@media only screen and (min-width: 768px) {
+  @each $vertical_align_name, $vertical_align_value in $vertical_align {
+    .#{tork-v-align-md- + $vertical_align_name} {
+      vertical-align: $vertical_align_value;
+    }
+  }
+}
+// For large devices
+@media only screen and (min-width: 992px) {
+  @each $vertical_align_name, $vertical_align_value in $vertical_align {
+    .#{tork-v-align-lg- + $vertical_align_name} {
+      vertical-align: $vertical_align_value;
+    }
+  }
+}
+// For extra large devices
+@media only screen and (min-width: 1200px) {
+  @each $vertical_align_name, $vertical_align_value in $vertical_align {
+    .#{tork-v-align-xl- + $vertical_align_name} {
+      vertical-align: $vertical_align_value;
+    }
+  }
+}

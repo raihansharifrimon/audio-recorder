@@ -1,0 +1,45 @@
+$visibility: (
+  visible: visible,
+  invisible: hidden,
+);
+
+@each $visibility_name, $visibility_value in $visibility {
+  .#{tork- + $visibility_name} {
+    visibility: $visibility_value;
+  }
+}
+
+// ------------Responsive Positions
+
+// For small devices
+@media only screen and (min-width: 576px) {
+  @each $visibility_name, $visibility_value in $visibility {
+    .#{tork-sm- + $visibility_name} {
+      visibility: $visibility_value;
+    }
+  }
+}
+// For Midium devices
+@media only screen and (min-width: 768px) {
+  @each $visibility_name, $visibility_value in $visibility {
+    .#{tork-md- + $visibility_name} {
+      visibility: $visibility_value;
+    }
+  }
+}
+// For large devices
+@media only screen and (min-width: 992px) {
+  @each $visibility_name, $visibility_value in $visibility {
+    .#{tork-lg- + $visibility_name} {
+      visibility: $visibility_value;
+    }
+  }
+}
+// For extra large devices
+@media only screen and (min-width: 1200px) {
+  @each $visibility_name, $visibility_value in $visibility {
+    .#{tork-xl- + $visibility_name} {
+      visibility: $visibility_value;
+    }
+  }
+}

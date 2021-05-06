@@ -1,0 +1,47 @@
+$overflow: (
+  auto: auto,
+  hidden: hidden,
+  visible: visible,
+  scroll: scroll,
+);
+
+@each $overflow_name, $overflow_value in $overflow {
+  .#{tork-overflow- + $overflow_name} {
+    overflow: $overflow_value;
+  }
+}
+
+// ------------Responsive overflow
+
+// For small devices
+@media only screen and (min-width: 576px) {
+  @each $overflow_name, $overflow_value in $overflow {
+    .#{tork-overflow-sm- + $overflow_name} {
+      overflow: $overflow_value;
+    }
+  }
+}
+// For Midium devices
+@media only screen and (min-width: 768px) {
+  @each $overflow_name, $overflow_value in $overflow {
+    .#{tork-overflow-md- + $overflow_name} {
+      overflow: $overflow_value;
+    }
+  }
+}
+// For large devices
+@media only screen and (min-width: 992px) {
+  @each $overflow_name, $overflow_value in $overflow {
+    .#{tork-overflow-lg- + $overflow_name} {
+      overflow: $overflow_value;
+    }
+  }
+}
+// For extra large devices
+@media only screen and (min-width: 1200px) {
+  @each $overflow_name, $overflow_value in $overflow {
+    .#{tork-overflow-xl- + $overflow_name} {
+      overflow: $overflow_value;
+    }
+  }
+}

@@ -1,0 +1,263 @@
+// ------------------justify map
+$tork-flex-justify: (
+  start: start,
+  end: end,
+  center: center,
+  space-between: space-between,
+  space-around: space-around,
+  space-evenly: space-evenly,
+);
+
+// -------------------Align map
+$tork-flex-align: (
+  start: start,
+  end: end,
+  center: center,
+  baseline: baseline,
+  stretch: stretch,
+);
+
+// -------------- Direction map
+$tork-flex-direction: (
+  column: column,
+  column-reverse: column-reverse,
+  row: row,
+  row-reverse: row-reverse,
+);
+// ---------------- Flex wrap
+$tork-flex-wrap: (
+  flex-nowrap: nowrap,
+  flex-wrap: wrap,
+  flex-wrap-reverse: wrap-reverse,
+);
+
+//--------------Flex Justify content
+@each $flex-justify-name, $justify-content-value in $tork-flex-justify {
+  .#{tork-justify-c- + $flex-justify-name} {
+    justify-content: $justify-content-value;
+  }
+}
+
+// ---------------Flex Align items
+@each $align-name, $align-items-value in $tork-flex-align {
+  .#{tork-items- + $align-name} {
+    align-items: $align-items-value;
+  }
+}
+
+// -------------Flex Align Self
+@each $align-self-name, $align-self-value in $tork-flex-align {
+  .#{tork-align-self- + $align-self-name} {
+    align-self: $align-self-value;
+  }
+}
+
+// ------------Flex Direction
+@each $flex-direction, $flex-dir-value in $tork-flex-direction {
+  .#{tork-flex- + $flex-direction } {
+    flex-direction: $flex-dir-value;
+  }
+}
+
+// ---------------Flex Wrap
+@each $flex-wrap-name, $flex-wrap-value in $tork-flex-wrap {
+  .#{tork- + $flex-wrap-name} {
+    flex-wrap: $flex-wrap-value;
+  }
+}
+
+//---------------Flex order
+@for $flex-order from 1 to 5 {
+  .#{tork-flex-order- + $flex-order} {
+    order: $flex-order;
+  }
+}
+
+// (series of sibling elements to force them into widths equal to their content width)
+.tork-flex-fill {
+  flex: 1 1 auto;
+}
+
+// (flex item’s ability to grow to fill available space the container width)
+.tork-flex-grow-1 {
+  flex-grow: 1;
+}
+
+// ------------------Flex Responsive
+
+// For small devices
+@media only screen and (min-width: 576px) {
+  //--------------Flex Justify content
+  @each $flex-justify-name, $justify-content-value in $tork-flex-justify {
+    .#{tork-justify-c-sm- + $flex-justify-name} {
+      justify-content: $justify-content-value;
+    }
+  }
+
+  // ---------------Flex Align items
+  @each $align-name, $align-items-value in $tork-flex-align {
+    .#{tork-items-sm- + $align-name} {
+      align-items: $align-items-value;
+    }
+  }
+
+  // -------------Flex Align Self
+  @each $align-self-name, $align-self-value in $tork-flex-align {
+    .#{tork-align-self-sm- + $align-self-name} {
+      align-self: $align-self-value;
+    }
+  }
+
+  // ------------Flex Direction
+  @each $flex-direction, $flex-dir-value in $tork-flex-direction {
+    .#{tork-flex-sm- + $flex-direction } {
+      flex-direction: $flex-dir-value;
+    }
+  }
+
+  // ---------------Flex Wrap
+  @each $flex-wrap-name, $flex-wrap-value in $tork-flex-wrap {
+    .#{tork-sm- + $flex-wrap-name} {
+      flex-wrap: $flex-wrap-value;
+    }
+  }
+
+  //---------------Flex order
+  @for $flex-order from 1 to 5 {
+    .#{tork-flex-order-sm- + $flex-order} {
+      order: $flex-order;
+    }
+  }
+}
+// For Midium devices
+@media only screen and (min-width: 768px) {
+  //--------------Flex Justify content
+  @each $flex-justify-name, $justify-content-value in $tork-flex-justify {
+    .#{tork-justify-c-md- + $flex-justify-name} {
+      justify-content: $justify-content-value;
+    }
+  }
+
+  // ---------------Flex Align items
+  @each $align-name, $align-items-value in $tork-flex-align {
+    .#{tork-items-md- + $align-name} {
+      align-items: $align-items-value;
+    }
+  }
+
+  // -------------Flex Align Self
+  @each $align-self-name, $align-self-value in $tork-flex-align {
+    .#{tork-align-self-md- + $align-self-name} {
+      align-self: $align-self-value;
+    }
+  }
+
+  // ------------Flex Direction
+  @each $flex-direction, $flex-dir-value in $tork-flex-direction {
+    .#{tork-flex-md- + $flex-direction } {
+      flex-direction: $flex-dir-value;
+    }
+  }
+
+  // ---------------Flex Wrap
+  @each $flex-wrap-name, $flex-wrap-value in $tork-flex-wrap {
+    .#{tork-md- + $flex-wrap-name} {
+      flex-wrap: $flex-wrap-value;
+    }
+  }
+
+  //---------------Flex order
+  @for $flex-order from 1 to 5 {
+    .#{tork-flex-order-md- + $flex-order} {
+      order: $flex-order;
+    }
+  }
+}
+// For large devices
+@media only screen and (min-width: 992px) {
+  //--------------Flex Justify content
+  @each $flex-justify-name, $justify-content-value in $tork-flex-justify {
+    .#{tork-justify-c-lg- + $flex-justify-name} {
+      justify-content: $justify-content-value;
+    }
+  }
+
+  // ---------------Flex Align items
+  @each $align-name, $align-items-value in $tork-flex-align {
+    .#{tork-items-lg- + $align-name} {
+      align-items: $align-items-value;
+    }
+  }
+
+  // -------------Flex Align Self
+  @each $align-self-name, $align-self-value in $tork-flex-align {
+    .#{tork-align-self-lg- + $align-self-name} {
+      align-self: $align-self-value;
+    }
+  }
+
+  // ------------Flex Direction
+  @each $flex-direction, $flex-dir-value in $tork-flex-direction {
+    .#{tork-flex-lg- + $flex-direction } {
+      flex-direction: $flex-dir-value;
+    }
+  }
+
+  // ---------------Flex Wrap
+  @each $flex-wrap-name, $flex-wrap-value in $tork-flex-wrap {
+    .#{tork-lg- + $flex-wrap-name} {
+      flex-wrap: $flex-wrap-value;
+    }
+  }
+
+  //---------------Flex order
+  @for $flex-order from 1 to 5 {
+    .#{tork-flex-order-lg- + $flex-order} {
+      order: $flex-order;
+    }
+  }
+}
+// For extra large devices
+@media only screen and (min-width: 1200px) {
+  //--------------Flex Justify content
+  @each $flex-justify-name, $justify-content-value in $tork-flex-justify {
+    .#{tork-justify-c-xl- + $flex-justify-name} {
+      justify-content: $justify-content-value;
+    }
+  }
+
+  // ---------------Flex Align items
+  @each $align-name, $align-items-value in $tork-flex-align {
+    .#{tork-items-xl- + $align-name} {
+      align-items: $align-items-value;
+    }
+  }
+
+  // -------------Flex Align Self
+  @each $align-self-name, $align-self-value in $tork-flex-align {
+    .#{tork-align-self-xl- + $align-self-name} {
+      align-self: $align-self-value;
+    }
+  }
+
+  // ------------Flex Direction
+  @each $flex-direction, $flex-dir-value in $tork-flex-direction {
+    .#{tork-flex-xl- + $flex-direction } {
+      flex-direction: $flex-dir-value;
+    }
+  }
+
+  // ---------------Flex Wrap
+  @each $flex-wrap-name, $flex-wrap-value in $tork-flex-wrap {
+    .#{tork-xl- + $flex-wrap-name} {
+      flex-wrap: $flex-wrap-value;
+    }
+  }
+
+  //---------------Flex order
+  @for $flex-order from 1 to 5 {
+    .#{tork-flex-order-xl- + $flex-order} {
+      order: $flex-order;
+    }
+  }
+}

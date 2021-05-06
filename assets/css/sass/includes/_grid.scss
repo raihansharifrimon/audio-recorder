@@ -1,0 +1,275 @@
+/* ------------------
+* Responsive grids
+----------------------*/
+.tork-col-sm-1,
+.tork-col-sm-2,
+.tork-col-sm-3,
+.tork-col-sm-4,
+.tork-col-sm-5,
+.tork-col-sm-6,
+.tork-col-sm-7,
+.tork-col-sm-8,
+.tork-col-sm-9,
+.tork-col-sm-10,
+.tork-col-sm-11,
+.tork-col-sm-12,
+.tork-col-md-1,
+.tork-col-md-2,
+.tork-col-md-3,
+.tork-col-md-4,
+.tork-col-md-5,
+.tork-col-md-6,
+.tork-col-md-7,
+.tork-col-md-8,
+.tork-col-md-9,
+.tork-col-md-10,
+.tork-col-md-11,
+.tork-col-md-12,
+.tork-col-lg-1,
+.tork-col-lg-2,
+.tork-col-lg-3,
+.tork-col-lg-4,
+.tork-col-lg-5,
+.tork-col-lg-6,
+.tork-col-lg-7,
+.tork-col-lg-8,
+.tork-col-lg-9,
+.tork-col-lg-10,
+.tork-col-lg-11,
+.tork-col-lg-12,
+.tork-col-xl-1,
+.tork-col-xl-2,
+.tork-col-xl-3,
+.tork-col-xl-4,
+.tork-col-xl-5,
+.tork-col-xl-6,
+.tork-col-xl-7,
+.tork-col-xl-8,
+.tork-col-xl-9,
+.tork-col-xl-10,
+.tork-col-xl-11,
+.tork-col-xl-12 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+// Col 
+@for $i from 1 to 13 {
+  .#{tork-col- + $i}{
+    flex: 0 0 8.333333333333333 * $i + %;
+    max-width: 8.333333333333333 * $i + %;
+  }
+}
+
+
+// For small devices
+@media only screen and (min-width: 576px) {
+  .tork-col-sm-1 {
+    flex: 0 0 8.333333333333333%;
+    max-width: 8.333333333333333%;
+  }
+  .tork-col-sm-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .tork-col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .tork-col-sm-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .tork-col-sm-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .tork-col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .tork-col-sm-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .tork-col-sm-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .tork-col-sm-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .tork-col-sm-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .tork-col-sm-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .tork-col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+// For Midium devices
+@media only screen and (min-width: 768px) {
+  .tork-col-md-1 {
+    flex: 0 0 8.333333333333333%;
+    max-width: 8.333333333333333%;
+  }
+  .tork-col-md-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .tork-col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .tork-col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .tork-col-md-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .tork-col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .tork-col-md-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .tork-col-md-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .tork-col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .tork-col-md-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .tork-col-md-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .tork-col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+//For large devices
+@media only screen and (min-width: 992px) {
+  .tork-col-lg-1 {
+    flex: 0 0 8.333333333333333%;
+    max-width: 8.333333333333333%;
+  }
+  .tork-col-lg-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .tork-col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .tork-col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .tork-col-lg-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .tork-col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .tork-col-lg-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .tork-col-lg-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .tork-col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .tork-col-lg-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .tork-col-lg-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .tork-col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+//  For extrea large devices
+
+@media only screen and (min-width: 1200px) {
+  .tork-col-xl-1 {
+    flex: 0 0 8.333333333333333%;
+    max-width: 8.333333333333333%;
+  }
+  .tork-col-xl-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .tork-col-xl-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .tork-col-xl-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .tork-col-xl-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .tork-col-xl-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .tork-col-xl-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .tork-col-xl-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .tork-col-xl-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .tork-col-xl-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .tork-col-xl-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .tork-col-xl-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

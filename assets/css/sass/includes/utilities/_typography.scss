@@ -1,0 +1,42 @@
+$text_aligns: (
+  left: left,
+  right: right,
+  center: center,
+);
+
+// --------------Text transform
+.tork-text-lowercase {
+  text-transform: lowercase;
+}
+.tork-text-uppercase {
+  text-transform: uppercase;
+}
+.tork-text-capitalize {
+  text-transform: capitalize;
+}
+
+// -----------------Font weight
+.tork-fw-bolder {
+  font-weight: bolder;
+}
+.tork-fw-bold {
+  font-weight: 700;
+}
+.tork-fw-400 {
+  font-weight: 400;
+}
+.tork-fw-300 {
+  font-weight: 300;
+}
+.tork-fw-lighter {
+  font-weight: lighter;
+}
+.tork-text-italic {
+  font-style: italic;
+}
+// ----------------text align
+@each $align_name, $align_value in $text_aligns {
+  .#{tork-text- + $align_name} {
+    text-align: $align_value !important;
+  }
+}

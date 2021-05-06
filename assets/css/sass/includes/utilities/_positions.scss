@@ -1,0 +1,48 @@
+$position: (
+  static: static,
+  relative: relative,
+  absolute: absolute,
+  fixed: fixed,
+  sticky: sticky,
+);
+
+@each $position_name, $position_value in $position {
+  .#{tork-position- + $position_name} {
+    position: $position_value;
+  }
+}
+
+// ------------Responsive Positions
+
+// For small devices
+@media only screen and (min-width: 576px) {
+  @each $position_name, $position_value in $position {
+    .#{tork-position-sm- + $position_name} {
+      position: $position_value;
+    }
+  }
+}
+// For Midium devices
+@media only screen and (min-width: 768px) {
+  @each $position_name, $position_value in $position {
+    .#{tork-position-md- + $position_name} {
+      position: $position_value;
+    }
+  }
+}
+// For large devices
+@media only screen and (min-width: 992px) {
+  @each $position_name, $position_value in $position {
+    .#{tork-position-lg- + $position_name} {
+      position: $position_value;
+    }
+  }
+}
+// For extra large devices
+@media only screen and (min-width: 1200px) {
+  @each $position_name, $position_value in $position {
+    .#{tork-position-xl- + $position_name} {
+      position: $position_value;
+    }
+  }
+}

@@ -1,0 +1,568 @@
+//-------------------------Marging
+// ----------Margin around
+@for $i from 1 through 5 {
+  .#{tork-m- + $i} {
+    margin: $i * 0.25rem !important;
+  }
+}
+
+// Margin Top
+@for $i from 1 through 5 {
+  .#{tork-mt- + $i} {
+    margin-top: $i * 0.25rem !important;
+  }
+}
+
+// Margin bottom
+@for $i from 1 through 5 {
+  .#{tork-mb- + $i} {
+    margin-bottom: $i * 0.25rem !important;
+  }
+}
+// Margin left
+@for $i from 1 through 5 {
+  .#{tork-ml- + $i} {
+    margin-left: $i * 0.25rem !important;
+  }
+}
+// Margin right
+@for $i from 1 through 5 {
+  .#{tork-mr- + $i} {
+    margin-right: $i * 0.25rem !important;
+  }
+}
+// Margin left and right
+@for $i from 1 through 5 {
+  .#{tork-mx- + $i} {
+    margin-left: $i * 0.25rem !important;
+    margin-right: $i * 0.25rem !important;
+  }
+}
+// Margin top and bottom
+@for $i from 1 through 5 {
+  .#{tork-my- + $i} {
+    margin-top: $i * 0.25rem !important;
+    margin-bottom: $i * 0.25rem !important;
+  }
+}
+
+// -----------------Marging left auto
+.tork-mt-auto {
+  margin-top: auto;
+}
+.tork-mb-auto {
+  margin-bottom: auto;
+}
+.tork-ml-auto {
+  margin-left: auto;
+}
+.tork-mr-auto {
+  margin-right: auto;
+}
+.tork-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//--------------------Paddding
+// padding around
+@for $i from 1 through 5 {
+  .#{tork-p- + $i} {
+    padding: $i * 0.25rem !important;
+  }
+}
+// padding Top
+@for $i from 1 through 5 {
+  .#{tork-pt- + $i} {
+    padding-top: $i * 0.25rem !important;
+  }
+}
+
+// Padding bottom
+@for $i from 1 through 5 {
+  .#{tork-pb- + $i} {
+    padding-bottom: $i * 0.25rem !important;
+  }
+}
+// Pdding left
+@for $i from 1 through 5 {
+  .#{tork-pl- + $i} {
+    padding-left: $i * 0.25rem !important;
+  }
+}
+// Padding right
+@for $i from 1 through 5 {
+  .#{tork-pr- + $i} {
+    padding-right: $i * 0.25rem !important;
+  }
+}
+
+// Padding left and right
+@for $i from 1 through 5 {
+  .#{tork-px- + $i} {
+    padding-left: $i * 0.25rem !important;
+    padding-right: $i * 0.25rem !important;
+  }
+}
+// Padding top and bottom
+@for $i from 1 through 5 {
+  .#{tork-py- + $i} {
+    padding-top: $i * 0.25rem !important;
+    padding-bottom: $i * 0.25rem !important;
+  }
+}
+
+// ------------Responsive display
+
+// For small devices
+@media only screen and (min-width: 576px) {
+  // ----------Margin around
+  @for $i from 1 through 5 {
+    .#{tork-m-sm- + $i} {
+      margin: $i * 0.25rem !important;
+    }
+  }
+
+  // Margin Top
+  @for $i from 1 through 5 {
+    .#{tork-mt-sm- + $i} {
+      margin-top: $i * 0.25rem !important;
+    }
+  }
+
+  // Margin bottom
+  @for $i from 1 through 5 {
+    .#{tork-mb-sm- + $i} {
+      margin-bottom: $i * 0.25rem !important;
+    }
+  }
+  // Margin left
+  @for $i from 1 through 5 {
+    .#{tork-ml-sm- + $i} {
+      margin-left: $i * 0.25rem !important;
+    }
+  }
+  // Margin right
+  @for $i from 1 through 5 {
+    .#{tork-mr-sm- + $i} {
+      margin-right: $i * 0.25rem !important;
+    }
+  }
+  // Margin left and right
+  @for $i from 1 through 5 {
+    .#{tork-mx-sm- + $i} {
+      margin-left: $i * 0.25rem !important;
+      margin-right: $i * 0.25rem !important;
+    }
+  }
+  // Margin top and bottom
+  @for $i from 1 through 5 {
+    .#{tork-my-sm- + $i} {
+      margin-top: $i * 0.25rem !important;
+      margin-bottom: $i * 0.25rem !important;
+    }
+  }
+
+  // -----------------Marging left auto
+  .tork-mt-sm-auto {
+    margin-top: auto;
+  }
+  .tork-mb-sm-auto {
+    margin-bottom: auto;
+  }
+  .tork-ml-sm-auto {
+    margin-left: auto;
+  }
+  .tork-mr-sm-auto {
+    margin-right: auto;
+  }
+  .tork-mx-sm-auto {
+    margin-left: 0 auto;
+  }
+  //--------------------Paddding
+  // padding around
+  @for $i from 1 through 5 {
+    .#{tork-p-sm- + $i} {
+      padding: $i * 0.25rem !important;
+    }
+  }
+  // padding Top
+  @for $i from 1 through 5 {
+    .#{tork-pt-sm- + $i} {
+      padding-top: $i * 0.25rem !important;
+    }
+  }
+
+  // Padding bottom
+  @for $i from 1 through 5 {
+    .#{tork-pb-sm- + $i} {
+      padding-bottom: $i * 0.25rem !important;
+    }
+  }
+  // Pdding left
+  @for $i from 1 through 5 {
+    .#{tork-pl-sm- + $i} {
+      padding-left: $i * 0.25rem !important;
+    }
+  }
+  // Padding right
+  @for $i from 1 through 5 {
+    .#{tork-pr-sm- + $i} {
+      padding-right: $i * 0.25rem !important;
+    }
+  }
+
+  // Padding left and right
+  @for $i from 1 through 5 {
+    .#{tork-px-sm- + $i} {
+      padding-left: $i * 0.25rem !important;
+      padding-right: $i * 0.25rem !important;
+    }
+  }
+  // Padding top and bottom
+  @for $i from 1 through 5 {
+    .#{tork-py-sm- + $i} {
+      padding-top: $i * 0.25rem !important;
+      padding-bottom: $i * 0.25rem !important;
+    }
+  }
+}
+// For Midium devices
+@media only screen and (min-width: 768px) {
+  // ----------Margin around
+  @for $i from 1 through 5 {
+    .#{tork-m-md- + $i} {
+      margin: $i * 0.25rem !important;
+    }
+  }
+
+  // Margin Top
+  @for $i from 1 through 5 {
+    .#{tork-mt-md- + $i} {
+      margin-top: $i * 0.25rem !important;
+    }
+  }
+
+  // Margin bottom
+  @for $i from 1 through 5 {
+    .#{tork-mb-md- + $i} {
+      margin-bottom: $i * 0.25rem !important;
+    }
+  }
+  // Margin left
+  @for $i from 1 through 5 {
+    .#{tork-ml-md- + $i} {
+      margin-left: $i * 0.25rem !important;
+    }
+  }
+  // Margin right
+  @for $i from 1 through 5 {
+    .#{tork-mr-md- + $i} {
+      margin-right: $i * 0.25rem !important;
+    }
+  }
+  // Margin left and right
+  @for $i from 1 through 5 {
+    .#{tork-mx-md- + $i} {
+      margin-left: $i * 0.25rem !important;
+      margin-right: $i * 0.25rem !important;
+    }
+  }
+  // Margin top and bottom
+  @for $i from 1 through 5 {
+    .#{tork-my-md- + $i} {
+      margin-top: $i * 0.25rem !important;
+      margin-bottom: $i * 0.25rem !important;
+    }
+  }
+
+  // -----------------Marging left auto
+  .tork-mt-md-auto {
+    margin-top: auto;
+  }
+  .tork-mb-md-auto {
+    margin-bottom: auto;
+  }
+  .tork-ml-md-auto {
+    margin-left: auto;
+  }
+  .tork-mr-md-auto {
+    margin-right: auto;
+  }
+  .tork-mx-md-auto {
+    margin-left: 0 auto;
+  }
+  //--------------------Paddding
+  // padding around
+  @for $i from 1 through 5 {
+    .#{tork-p-md- + $i} {
+      padding: $i * 0.25rem !important;
+    }
+  }
+  // padding Top
+  @for $i from 1 through 5 {
+    .#{tork-pt-md- + $i} {
+      padding-top: $i * 0.25rem !important;
+    }
+  }
+
+  // Padding bottom
+  @for $i from 1 through 5 {
+    .#{tork-pb-md- + $i} {
+      padding-bottom: $i * 0.25rem !important;
+    }
+  }
+  // Pdding left
+  @for $i from 1 through 5 {
+    .#{tork-pl-md- + $i} {
+      padding-left: $i * 0.25rem !important;
+    }
+  }
+  // Padding right
+  @for $i from 1 through 5 {
+    .#{tork-pr-md- + $i} {
+      padding-right: $i * 0.25rem !important;
+    }
+  }
+
+  // Padding left and right
+  @for $i from 1 through 5 {
+    .#{tork-px-md- + $i} {
+      padding-left: $i * 0.25rem !important;
+      padding-right: $i * 0.25rem !important;
+    }
+  }
+  // Padding top and bottom
+  @for $i from 1 through 5 {
+    .#{tork-py-md- + $i} {
+      padding-top: $i * 0.25rem !important;
+      padding-bottom: $i * 0.25rem !important;
+    }
+  }
+}
+// For large devices
+@media only screen and (min-width: 992px) {
+  // ----------Margin around
+  @for $i from 1 through 5 {
+    .#{tork-m-lg- + $i} {
+      margin: $i * 0.25rem !important;
+    }
+  }
+
+  // Margin Top
+  @for $i from 1 through 5 {
+    .#{tork-mt-lg- + $i} {
+      margin-top: $i * 0.25rem !important;
+    }
+  }
+
+  // Margin bottom
+  @for $i from 1 through 5 {
+    .#{tork-mb-lg- + $i} {
+      margin-bottom: $i * 0.25rem !important;
+    }
+  }
+  // Margin left
+  @for $i from 1 through 5 {
+    .#{tork-ml-lg- + $i} {
+      margin-left: $i * 0.25rem !important;
+    }
+  }
+  // Margin right
+  @for $i from 1 through 5 {
+    .#{tork-mr-lg- + $i} {
+      margin-right: $i * 0.25rem !important;
+    }
+  }
+  // Margin left and right
+  @for $i from 1 through 5 {
+    .#{tork-mx-lg- + $i} {
+      margin-left: $i * 0.25rem !important;
+      margin-right: $i * 0.25rem !important;
+    }
+  }
+  // Margin top and bottom
+  @for $i from 1 through 5 {
+    .#{tork-my-lg- + $i} {
+      margin-top: $i * 0.25rem !important;
+      margin-bottom: $i * 0.25rem !important;
+    }
+  }
+
+  // -----------------Marging left auto
+  .tork-mt-lg-auto {
+    margin-top: auto;
+  }
+  .tork-mb-lg-auto {
+    margin-bottom: auto;
+  }
+  .tork-ml-auto {
+    margin-left: auto;
+  }
+  .tork-mr-lg-auto {
+    margin-right: auto;
+  }
+  .tork-mx-lg-auto {
+    margin-left: 0 auto;
+  }
+  //--------------------Paddding
+  // padding around
+  @for $i from 1 through 5 {
+    .#{tork-p-lg- + $i} {
+      padding: $i * 0.25rem !important;
+    }
+  }
+  // padding Top
+  @for $i from 1 through 5 {
+    .#{tork-pt-lg- + $i} {
+      padding-top: $i * 0.25rem !important;
+    }
+  }
+
+  // Padding bottom
+  @for $i from 1 through 5 {
+    .#{tork-pb-lg- + $i} {
+      padding-bottom: $i * 0.25rem !important;
+    }
+  }
+  // Pdding left
+  @for $i from 1 through 5 {
+    .#{tork-pl-lg- + $i} {
+      padding-left: $i * 0.25rem !important;
+    }
+  }
+  // Padding right
+  @for $i from 1 through 5 {
+    .#{tork-pr-lg- + $i} {
+      padding-right: $i * 0.25rem !important;
+    }
+  }
+
+  // Padding left and right
+  @for $i from 1 through 5 {
+    .#{tork-px-lg- + $i} {
+      padding-left: $i * 0.25rem !important;
+      padding-right: $i * 0.25rem !important;
+    }
+  }
+  // Padding top and bottom
+  @for $i from 1 through 5 {
+    .#{tork-py-lg- + $i} {
+      padding-top: $i * 0.25rem !important;
+      padding-bottom: $i * 0.25rem !important;
+    }
+  }
+}
+// For extra large devices
+@media only screen and (min-width: 1200px) {
+  // ----------Margin around
+  @for $i from 1 through 5 {
+    .#{tork-m-xl- + $i} {
+      margin: $i * 0.25rem !important;
+    }
+  }
+
+  // Margin Top
+  @for $i from 1 through 5 {
+    .#{tork-mt-xl- + $i} {
+      margin-top: $i * 0.25rem !important;
+    }
+  }
+
+  // Margin bottom
+  @for $i from 1 through 5 {
+    .#{tork-mb-xl- + $i} {
+      margin-bottom: $i * 0.25rem !important;
+    }
+  }
+  // Margin left
+  @for $i from 1 through 5 {
+    .#{tork-ml-xl- + $i} {
+      margin-left: $i * 0.25rem !important;
+    }
+  }
+  // Margin right
+  @for $i from 1 through 5 {
+    .#{tork-mr-xl- + $i} {
+      margin-right: $i * 0.25rem !important;
+    }
+  }
+  // Margin left and right
+  @for $i from 1 through 5 {
+    .#{tork-mx-xl- + $i} {
+      margin-left: $i * 0.25rem !important;
+      margin-right: $i * 0.25rem !important;
+    }
+  }
+  // Margin top and bottom
+  @for $i from 1 through 5 {
+    .#{tork-my-xl- + $i} {
+      margin-top: $i * 0.25rem !important;
+      margin-bottom: $i * 0.25rem !important;
+    }
+  }
+
+  // -----------------Marging left auto
+  .tork-mt-xl-auto {
+    margin-top: auto;
+  }
+  .tork-mb-xl-auto {
+    margin-bottom: auto;
+  }
+  .tork-ml-xl-auto {
+    margin-left: auto;
+  }
+  .tork-mr-xl-auto {
+    margin-right: auto;
+  }
+  .tork-mx-xl-auto {
+    margin-left: 0 auto;
+  }
+  //--------------------Paddding
+  // padding around
+  @for $i from 1 through 5 {
+    .#{tork-p-xl- + $i} {
+      padding: $i * 0.25rem !important;
+    }
+  }
+  // padding Top
+  @for $i from 1 through 5 {
+    .#{tork-pt-xl- + $i} {
+      padding-top: $i * 0.25rem !important;
+    }
+  }
+
+  // Padding bottom
+  @for $i from 1 through 5 {
+    .#{tork-pb-xl- + $i} {
+      padding-bottom: $i * 0.25rem !important;
+    }
+  }
+  // Pdding left
+  @for $i from 1 through 5 {
+    .#{tork-pl-xl- + $i} {
+      padding-left: $i * 0.25rem !important;
+    }
+  }
+  // Padding right
+  @for $i from 1 through 5 {
+    .#{tork-pr-xl- + $i} {
+      padding-right: $i * 0.25rem !important;
+    }
+  }
+
+  // Padding left and right
+  @for $i from 1 through 5 {
+    .#{tork-px-xl- + $i} {
+      padding-left: $i * 0.25rem !important;
+      padding-right: $i * 0.25rem !important;
+    }
+  }
+  // Padding top and bottom
+  @for $i from 1 through 5 {
+    .#{tork-py-xl- + $i} {
+      padding-top: $i * 0.25rem !important;
+      padding-bottom: $i * 0.25rem !important;
+    }
+  }
+}

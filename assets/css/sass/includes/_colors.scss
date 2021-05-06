@@ -1,0 +1,65 @@
+$primary-color: #606eb4;
+$secondary-color: #6c757d;
+$success-color: #198754;
+$danger-color: #e35a5a;
+$warning-color: #ffc107;
+$info-color: #606eb4b2;
+$light-color: #f8f9fa;
+$white-color: #ffffff;
+$dark-color: #2a435d;
+// use color
+$muted-color: #858585;
+
+// Gradients
+$primary-gradient-color: linear-gradient(
+  234.06deg,
+  rgba(255, 255, 255, 0.2) 0%,
+  rgba(255, 255, 255, 0.6) 100%
+);
+
+$secondary-gradient-color: linear-gradient(90deg, #80D8FF 0%, #EA80FC 100%);
+
+$primary-gradient-color-deep: linear-gradient(
+  90deg,
+  rgba(128, 216, 255, 0.8) 0%,
+  rgba(234, 128, 252, 0.8) 100%
+);
+
+// ----------- body text color global
+$body-text-color: #374a5e;
+$body-bg-color: linear-gradient(
+  90deg,
+  rgba(128, 216, 255, 0.45) 0%,
+  rgba(234, 128, 252, 0.4) 100%
+);
+
+// ------------- border colors
+$border_color: rgba(255, 255, 255, 0.568);
+$border_color_2: rgba(96, 110, 180, 0.2);
+
+// text-colors
+$tork-theme-colors: (
+  primary: $primary-color,
+  primary-gradient: $primary-gradient-color,
+  secondary: $secondary-color,
+  success: $success-color,
+  info: $info-color,
+  warning: $warning-color,
+  danger: $danger-color,
+  light: $light-color,
+  white: $white-color,
+  dark: $dark-color,
+);
+
+@each $name, $color in $tork-theme-colors {
+  .#{tork-text- + $name} {
+    color: $color !important;
+  }
+}
+
+//Background colors
+@each $name, $color in $tork-theme-colors {
+  .#{tork-bg- + $name} {
+    background: $color !important;
+  }
+}

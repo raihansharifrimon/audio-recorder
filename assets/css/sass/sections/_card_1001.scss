@@ -1,0 +1,58 @@
+.card_1001 {
+  .tork-card {
+    border-radius: 1.875rem;
+    background: linear-gradient(
+      234.06deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    );
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.568);
+  }
+
+  .tork-card-header {
+    padding: 0.8rem 1.625rem;
+    align-items: center;
+  }
+
+  .tork-card-body {
+    padding: 30px 26px;
+  }
+
+  .tork-btn-primary {
+    border-radius: 4rem;
+    padding: 0.625rem 4rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    font-weight: 400;
+    color: $white-color;
+  }
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .card_1001_inner {
+    margin-top: 1rem;
+  }
+
+  .tork-btn-primary {
+    border-radius: 4rem;
+    padding: 0.625rem 4rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+}
